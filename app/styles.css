@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px red; */
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.calc__content {
+    width: 28rem;
+    padding: 1.5rem;
+}
+
+.calc__content > h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.calc__content > input {
+    border: 2px solid #e5e5e5;
+    outline: none;
+    width: 25rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+
+.calc__submit {
+    margin-top: 1rem;
+    /* border-top: 2px solid #e5e5e5; */
+    width: 100%;
+    min-height: 50px;
+}
+
+.calc__submit-helper {
+    position: relative;
+}
+
+.calc__submit-helper > button {
+    position: absolute;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #58cc02;
+    box-shadow: 0px 3px 0px 0px rgba(88,167,0,1);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(88,167,0,1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(88,167,0,1);
+    border: none;
+    outline: none;
+    /* transition: all 0.1s; */
+}
+
+.calc__submit-helper > button:hover {
+    background-color: #64e302;    
+}
+
+.calc__submit-helper > button:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.calc__message {
+    border-radius: 3px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+}
+
+.theme_answer_correct {
+    background-color: #dffec7;
+    color: #409201;
+}
+
+.theme_answer_incorrect {
+    background-color: #ffdfe0;
+    color: #ea2b2b;
+}
+
+.calc__message > p {
+    font-size: 1.05rem;
+}
+
+.hide_element {
+    display: none;
+}

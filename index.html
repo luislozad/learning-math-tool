@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning math</title>
+    <link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="calc__content">
+                <h1>¿Cuanto es <span id="question"></span>?</h1>
+                <input type="number" id="answer">
+                
+                <div class="calc__submit">
+                    <div class="calc__submit-helper">
+                        <button>Comprobar</button>
+                    </div>
+                </div>
+                <div class="calc__message hide_element theme_answer_correct">
+                    <h2 id="answer_correct" class="hide_element">La respuesta es correcta.</h2>
+                    <h2 id="answer_incorrect" class="hide_element">La respuesta es incorrecta.</h2>
+                    <p>Para <span id="question_solution"></span> es igual a <span id="true_answer"></span>.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="app/app.js"></script>
+</body>
+</html>
