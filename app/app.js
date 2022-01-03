@@ -193,6 +193,10 @@ const App = (function() {
         onEventInputAnswer(state);
     }
 
-    start();
+    return {
+        start
+    };
 
 })();
+
+App.start();
